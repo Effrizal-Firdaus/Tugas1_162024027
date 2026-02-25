@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web Page - Effrizal Firdaus</title>
+    <style>
+      body {
+        font-family:
+          sitka headings,
+          serif;
+        background-color: #f0fffc;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        color: #2c3e50;
+        background-color: #3498db;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+      }
+      h2 {
+        color: #2c3e50;
+        background-color: #3498db;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background-color: #3498db;
+        margin: 20px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #333;
+      }
+      th {
+        background-color: #3498db;
+        color: white;
+        padding: 8px;
+      }
+      td {
+        padding: 8px;
+        background-color: #ecf0f1;
+      }
+      img {
+        border: 3px solid #3498db;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      form {
+        background-color: #ecf0f1;
+        padding: 15px;
+      }
+      form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input,
+      textarea {
+        width: 40%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input,
+      textarea {
+        width: 250px;
+        padding: 8px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: #4caf50;
+        background-color: #f0fff4;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+        transform: scale(1.03);
+      }
+      input:hover,
+      textarea:hover {
+        border-color: #81c784;
+      }
+      button:hover {
+        background-color: #298029;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #ecf0f1;
+        border-top: 1px solid #333;
+      }
+      .footer-row p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <a>
+    <!--Judul Halaman-->
+    <header>
+      <h1><center>Personal Web Page</center></h1>
+      <h2><center>Effrizal Firdaus - Sistem Informasi</center></h2>
+    </header>
+    <hr />
+
+    <!--Profil-->
+    <section>
+      <img src="Foto.jpg" alt="Foto Profil" width="200" height="auto" />
+    </section>
+    <hr />
+
+    <!--Biodata-->
+    <section>
+      <h3>Biodata Lengkap</h3>
+      <p><strong>Nama Lengkap:</strong> Effrizal Firdaus</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Banyumas, 08 Oktober 2005</p>
+      <p>
+        <strong>Deskripsi Singkat:</strong> Saya adalah mahasiswa yang memiliki
+        minat dalam bidang teknologi, khususnya pengembangan web dan
+        pemrograman.
+      </p>
+      <p>
+        <strong>Minat / Hobi:</strong> Joging, Coding dan Belajar Teknologi
+        Baru.
+      </p>
+    </section>
+    <hr />
+
+    <!--Riwayat Pendidikan-->
+    <section>
+      <h3>Riwayat Pendidikan</h3>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+          <th>Jenjang Pendidikan</th>
+          <th>Nama Institusi</th>
+          <th>Tahun</th>
+        </tr>
+        <tr>
+          <td>Sekolah Dasar</td>
+          <td>SDN Ciptawinaya</td>
+          <td><center>2011 - 2016</center></td>
+        </tr>
+        <tr>
+          <td>Sekolah Menengah Pertama</td>
+          <td>SMP Budi Utomo Perak</td>
+          <td><center>2017 - 2020</center></td>
+        </tr>
+        <tr>
+          <td>Sekolah Menengah Kejuruan</td>
+          <td>SMK Bina Negara Baleendah</td>
+          <td><center>2021 - 2024</center></td>
+        </tr>
+        <tr>
+          <td>Perguruan Tinggi</td>
+          <td>Institut Teknologi Nasional Bandung</td>
+          <td><center>2024 - 2028</center></td>
+        </tr>
+      </table>
+    </section>
+    <hr />
+
+    <!--Keahlian-->
+    <section>
+      <h3>Keahlian (Skills)</h3>
+      <ul>
+        <li>HTML</li>
+        <li>Analisis dan Desain</li>
+        <li>Javascript</li>
+        <li>Basis Data</li>
+      </ul>
+    </section>
+    <hr />
+
+    <!--Kontak-->
+    <h3>Form Kontak</h3>
+    <section>
+      <form id="contactForm">
+        <label for="name">Nama:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="message">Pesan:</label><br />
+        <textarea id="message" name="message"></textarea><br /><br />
+
+        <button type="submit">Kirim</button>
+        <p id="Hasil" style="margin-top: 10px; font-weight: bold"></p>
+      </form>
+    </section>
+    <hr />
+
+    <script>
+      const form = document.getElementById("contactForm");
+      const namaInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const hasil = document.getElementById("Hasil");
+
+      // Hapus pesan saat pengguna mulai mengetik ulang
+      function clearMessage() {
+        hasil.textContent = "";
+      }
+
+      namaInput.addEventListener("input", clearMessage);
+      emailInput.addEventListener("input", clearMessage);
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let nama = namaInput.value.trim();
+        let email = emailInput.value.trim();
+
+        if (nama === "" && email === "") {
+          hasil.textContent = "Silahkan isi form kontak terlebih dahulu";
+          hasil.style.color = "red";
+        } else if (nama === "") {
+          hasil.textContent = "Nama tidak boleh kosong";
+          hasil.style.color = "red";
+        } else if (email === "") {
+          hasil.textContent = "Email tidak boleh kosong";
+          hasil.style.color = "red";
+        } else {
+          hasil.textContent = "Halo, " + nama + "! Data berhasil dikirim.";
+          hasil.style.color = "green";
+
+          // Reset form setelah sukses
+          form.reset();
+
+          // Hilangkan pesan setelah 3 detik
+          setTimeout(function () {
+            hasil.textContent = "";
+          }, 4500);
+        }
+      });
+    </script>
+
+    <!--Footer-->
+    <footer class="footer-row">
+      <p class="left">&copy; 2026 Effrizal Firdaus. All Rights Reserved.</p>
+      <a href="https://github.com/Effrizal-Firdaus/Tugas1_162024027.git" style="display: block; text-align: right;">Link GitHub</a>
+    </footer>
+
+    <!--Tugas dan Pengumpulan-->
+    <section class="footer-row">
+      <p class="left">Tugas 1 Praktikum WEB HTML</p>
+      <p class="right">Rabu, 26 Februari 2026</p>
+    </section>
+
+  </body>
+</html>
